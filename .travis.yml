@@ -6,4 +6,4 @@ script:
 before_install:
   -  npm install -g firebase-tools
 after_success:
-  - firebase deploy — project ls-life — token $FIREBASE_TOKEN.
+  - firebase deploy-project ls-life-token $FIREBASE_TOKEN.
