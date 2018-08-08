@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#00d7b1">
   <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/images/icon.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
   <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -21,7 +21,48 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>React App</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- Possible values include default, black, or black-translucent; only black-translucent is truly full screen -->
+  <!-- More info: https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Home screen icon -->
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/appIcon.png">
+
+  <!-- iOS startup images -->
+  <!-- More info and Sketch template: https://medium.com/@applification/progressive-web-app-splash-screens-80340b45d210 -->
+
+  <!-- iPhone SE -->
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/images/launch-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/images/launch-640x1136-landscape.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+
+  <!-- iPhone 6/7/8 -->
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/images/launch-750x1294.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/images/launch-750x1294-landscape.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+
+  <!-- iPhone 6+/7+/8+ -->
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/images/launch-1242x2148.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/images/launch-1242x2148-landscape.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+
+  <!-- iPhone X -->
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/images/launch-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/images/launch-1125x2436-landscape.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+
+  <!-- iPad 3/4/Pro 9.7" -->
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/images/launch-1536x2048.png" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/images/launch-1536x2048-landscape.png" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)">
+
+  <!-- iPad Pro 10.5" -->
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/images/launch-1668x2224.png" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/images/launch-1668x2224-landscape.png" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)">
+
+  <!-- iPad Pro 12.9" -->
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/images/launch-2048x2732.png" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/images/launch-2048x2732-landscape.png" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)">
+
+  <title>LS Life</title>
 </head>
 
 <body>

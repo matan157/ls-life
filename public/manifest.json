@@ -1,15 +1,22 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "LS Life",
+  "name": "LS Life Counter App",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src":
+        "images/icon.png // Android: Requires a PNG at least 512x512 for your startup screen. This is used along with your app name (above) and background color (below) to generate a splash screen. Learn more: https://developers.google.com/web/fundamentals/web-app-manifest/#add_a_splash_screen",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src":
+        "images/icon.png // Android requires a PNG at least 192x192 for your home screen icon",
+      "sizes": "192x192",
+      "type": "image/png"
     }
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#00d7b1",
+  "background_color": "#00d7b1"
 }
